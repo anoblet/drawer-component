@@ -8,7 +8,7 @@ export class DrawerComponent extends LitElement {
   public static styles = Style;
   public render = Template.bind(this);
 
-  @property() opened = false;
+  @property({ type: Boolean, reflect: true }) opened = false;
 
   public toggle() {
     this.opened = !this.opened;

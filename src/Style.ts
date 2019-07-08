@@ -12,4 +12,8 @@ export default css`
   :host[opened] slot[name="drawer"] {
     display: contents;
   }
+
+  main {
+    flex: 1;
+  }
 `;
