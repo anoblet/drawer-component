@@ -1,11 +1,15 @@
 import { css } from "lit-element";
 
 export default css`
-  slot[name="main"] {
+  :host {
+    display: flex;
+  }
+
+  slot[name="drawer"] {
     display: none;
   }
 
-  :host[opened] slot[name="main"] {
+  :host[opened] slot[name="drawer"] {
     display: contents;
   }
 `;
