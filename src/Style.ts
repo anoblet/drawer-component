@@ -5,12 +5,12 @@ export default css`
     display: flex;
   }
 
-  slot[name="drawer"] {
+  :host aside {
     display: none;
   }
 
-  :host[opened] slot[name="drawer"] {
-    display: contents;
+  :host([opened]) aside {
+    display: block;
   }
 
   main {
