@@ -5,15 +5,18 @@ export default css`
     display: flex;
   }
 
-  :host aside {
-    display: none;
+  aside {
+    flex: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    white-space: nowrap;
   }
 
   :host([opened]) aside {
-    display: block;
+    flex: 1;
   }
 
   main {
-    flex: 1;
+    flex: 5;
   }
 `;
