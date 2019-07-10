@@ -3,6 +3,7 @@ import { css } from "lit-element";
 export default css`
   :host {
     display: flex;
+    overflow-y: auto;
   }
 
   aside {
@@ -18,5 +19,6 @@ export default css`
 
   main {
     flex: 5;
+    overflow-y: auto;
   }
 `;
