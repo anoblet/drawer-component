@@ -12,5 +12,10 @@ export class DrawerComponent extends LitElement {
 
   public toggle() {
     this.opened = !this.opened;
+    window.dispatchEvent(
+      new CustomEvent("drawer-toggled", {
+        composed: true
+      })
+    );
   }
 }
