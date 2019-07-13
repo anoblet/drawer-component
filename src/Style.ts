@@ -3,26 +3,21 @@ import { css } from "lit-element";
 export default css`
   :host {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: max-content auto;
   }
 
   aside {
-    display: none;
+    width:0;
     overflow: hidden;
     transition: 0.5s;
     white-space: nowrap;
   }
 
-  :host([opened]) {
-    grid-template-columns: max-content auto;
-  }
-
   :host([opened]) aside {
-    display: block;
+    width: 100%;
   }
 
   main {
-    flex: 5;
     overflow-y: auto;
   }
 `;
