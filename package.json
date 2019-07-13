@@ -5,8 +5,9 @@
   "main": "dist/drawer-component.js",
   "scripts": {
     "build": "rollup --config",
-    "watch": "rollup --config -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "save": "git add . && git commit -m \"Chore: Save\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "rollup --config -w"
   },
   "author": "",
   "license": "ISC",

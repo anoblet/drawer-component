@@ -4,7 +4,6 @@ export default css`
   :host {
     display: grid;
     grid-template-columns: auto;
-    overflow-y: auto;
   }
 
   aside {
