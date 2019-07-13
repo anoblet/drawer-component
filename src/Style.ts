@@ -2,19 +2,24 @@ import { css } from "lit-element";
 
 export default css`
   :host {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
     overflow-y: auto;
   }
 
   aside {
-    flex: 0;
+    display: none;
     overflow: hidden;
     transition: 0.5s;
     white-space: nowrap;
   }
 
+  :host([opened]) {
+    grid-template-columns: max-content auto;
+  }
+
   :host([opened]) aside {
-    flex: 1;
+    display: block;
   }
 
   main {
