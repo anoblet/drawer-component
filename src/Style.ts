@@ -4,10 +4,11 @@ export default css`
   :host {
     display: grid;
     grid-template-columns: max-content auto;
+    overflow-y: auto;
   }
 
   aside {
-    width:0;
+    width: 0;
     overflow: hidden;
     white-space: nowrap;
   }
