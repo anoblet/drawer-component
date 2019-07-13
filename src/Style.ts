@@ -9,7 +9,6 @@ export default css`
   aside {
     width:0;
     overflow: hidden;
-    transition: 0.25s;
     white-space: nowrap;
   }
 
