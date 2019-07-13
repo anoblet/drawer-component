@@ -5,6 +5,7 @@
   "main": "dist/drawer-component.js",
   "scripts": {
     "build": "rollup --config",
+    "watch": "rollup --config -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
