@@ -12,6 +12,8 @@ export default css`
     width: 0;
     overflow: hidden;
     white-space: nowrap;
+    transition: width 0.2s;
+    transition-timing-function: ease-in-out;
   }
 
   :host([opened]) aside {
