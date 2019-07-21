@@ -5,6 +5,7 @@ export default css`
     display: grid;
     grid-template-columns: max-content auto;
     overflow-y: auto;
+    position: relative; /* Edge case */
   }
 
   aside {
@@ -19,6 +20,5 @@ export default css`
 
   main {
     overflow-y: auto;
-    position: relative; /* Edge case */
   }
 `;
