@@ -1,4 +1,4 @@
-import { LitElement, customElement, property } from "lit-element";
+import { LitElement, customElement, property, query } from "lit-element";
 
 import Style from "./Style";
 import Template from "./Template";
@@ -10,12 +10,16 @@ export class DrawerComponent extends LitElement {
 
   @property({ type: Boolean, reflect: true }) opened = false;
 
+  @query("aside") drawer: LitElement;
+
   public toggle() {
     this.opened = !this.opened;
-    window.dispatchEvent(
-      new CustomEvent("drawer-toggled", {
-        composed: true
-      })
+    this.drawer.addEventListener("transitionend", () =>
+      window.dispatchEvent(
+        new CustomEvent("drawer-toggled", {
+          composed: true
+        })
+      )
     );
   }
 }
