@@ -23,4 +23,8 @@ export default css`
   main {
     overflow-y: auto;
   }
+
+  ::slotted([slot="main"]) {
+    min-height: 100%;
+  }
 `;
