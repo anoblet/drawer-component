@@ -28,11 +28,15 @@ export default css`
     min-height: 100%;
   }
 
-  :host([absolute]) {
+  :host([absolute][opened]) {
     grid-template-columns: auto;
   }
 
   :host([absolute][opened]) aside {
     position: absolute;
+    z-index: 1;
+    background: var(--background-color);
+    width: max-content;
+    height: 100%;
   }
 `;
