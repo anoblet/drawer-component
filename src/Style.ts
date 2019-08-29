@@ -28,6 +28,10 @@ export default css`
     min-height: 100%;
   }
 
+  :host([absolute]) {
+    grid-template-columns: auto;
+  }
+
   :host([absolute][opened]) aside {
     position: absolute;
   }
