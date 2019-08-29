@@ -27,4 +27,8 @@ export default css`
   ::slotted([slot="main"]) {
     min-height: 100%;
   }
+
+  :host([absolute][opened]) aside {
+    position: absolute;
+  }
 `;

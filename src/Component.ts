@@ -9,6 +9,7 @@ export class DrawerComponent extends LitElement {
   public render = Template.bind(this);
 
   @property({ type: Boolean, reflect: true }) opened = false;
+  @property({ type: Boolean, reflect: true }) absolute = false;
 
   @query("aside") drawer: LitElement;
 
