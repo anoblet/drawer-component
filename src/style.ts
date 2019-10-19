@@ -4,7 +4,7 @@ export default css`
   * {
     box-sizing: border-box;
   }
-  
+
   :host {
     display: grid;
     grid-template-columns: max-content auto;
@@ -26,10 +26,6 @@ export default css`
 
   main {
     overflow-y: auto;
-  }
-
-  ::slotted([slot="main"]) {
-    min-height: 100%;
   }
 
   :host([absolute][opened]) {
