@@ -2,7 +2,7 @@
   "name": "@anoblet/drawer-component",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/drawer-component.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rollup --config",
     "save": "git add . && git commit -m \"Chore: Save\"",
