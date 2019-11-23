@@ -5,6 +5,7 @@
     "moduleResolution": "node",
     "lib": ["es2017", "dom"],
     "experimentalDecorators": true,
-    "declaration": true
+    "declaration": true,
+    "outDir": "dist"
   }
 }

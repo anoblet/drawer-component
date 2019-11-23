@@ -1,8 +1,9 @@
 {
   "name": "@anoblet/drawer-component",
-  "version": "1.0.4",
+  "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/component.js",
+  "module": "dist/component.js",
   "scripts": {
     "build": "rollup --config",
     "save": "git add . && git commit -m \"Chore: Save\"",
@@ -14,12 +15,7 @@
   "dependencies": {
     "lit-element": "^2.2.0"
   },
-  "devDependencies": {
-    "rollup": "^1.16.6",
-    "rollup-plugin-typescript": "^1.0.1",
-    "tslib": "^1.10.0",
-    "typescript": "^3.5.2"
-  },
+  "devDependencies": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
